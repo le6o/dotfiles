@@ -1,0 +1,9 @@
+[user]
+	name = Martin Ledgard
+	email = martin@le6o.com
+[color]
+	ui = true
+[alias]
+	ci = commit
+	co = checkout
+	st = status -s
