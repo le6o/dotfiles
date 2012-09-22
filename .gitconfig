@@ -1,9 +1,27 @@
 [user]
 	name = Martin Ledgard
 	email = martin@le6o.com
+
 [color]
-	ui = true
+	ui = True
+
+[merge]
+	log = True
+
 [alias]
+        br = branch -v
 	ci = commit
 	co = checkout
+        ls = ls-files
 	st = status -s
+
+        amend = commit --amend -C HEAD
+
+	diffw = diff --word-diff
+
+        pick = cherry-pick
+
+	staged = diff --cached
+
+[rerere]
+	enabled = True
