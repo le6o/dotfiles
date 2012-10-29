@@ -19,7 +19,9 @@
 
 	diffw = diff --word-diff
 
-        pick = cherry-pick
+	logg = log --graph --date=relative --abbrev-commit --format=format:'%C(yellow)%h%Creset%Cgreen%d%Creset %s %Cblue(%cr)%Creset'
+
+	pick = cherry-pick
 
 	staged = diff --cached
 
