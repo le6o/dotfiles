@@ -9,13 +9,13 @@
 	log = True
 
 [alias]
-        br = branch -v
+	br = branch -v
 	ci = commit
 	co = checkout
-        ls = ls-files
+	ls = ls-files
 	st = status -s
 
-        amend = commit --amend -C HEAD
+	amend = commit --amend -C HEAD
 
 	diffw = diff --word-diff
 
