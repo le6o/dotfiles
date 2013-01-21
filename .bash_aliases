@@ -17,3 +17,7 @@ alias now='date +%s'
 # Remove git branches
 alias git.prune='git branch --merged | grep -v \* | xargs git branch -D'
 alias git.PRUNE='git branch | grep -v \* | xargs git branch -D'
+
+# Composer
+alias composer.get='curl -s https://getcomposer.org/installer | php'
+alias composer='php composer.phar'
