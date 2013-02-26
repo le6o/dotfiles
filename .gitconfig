@@ -27,3 +27,5 @@
 
 [rerere]
 	enabled = True
+[push]
+	default = upstream
