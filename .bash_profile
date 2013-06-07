@@ -12,6 +12,11 @@ export HISTFILESIZE=123456
 shopt -s histappend
 PROMPT_COMMAND+='history -a;'
 
+# History completion based on current input
+# See http://stackoverflow.com/a/1030206/11895
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+
 # Load aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
