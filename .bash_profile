@@ -17,6 +17,23 @@ PROMPT_COMMAND+='history -a;'
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
+# Bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
+# Git Prompt
+source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWSTASHSTATE=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWCOLORHINTS=1
+GIT_PS1_DESCRIBE_STYLE="branch"
+GIT_PS1_SHOWUPSTREAM="auto git"
+
+PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
+
 # Load aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
