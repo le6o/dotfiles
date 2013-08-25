@@ -24,3 +24,6 @@ alias composer='php composer.phar'
 
 # PHPUnit
 alias phpunit='vendor/phpunit/phpunit/phpunit.php'
+
+# PHP-CS-Fixer
+alias phix='php-cs-fixer --level=all fix'
