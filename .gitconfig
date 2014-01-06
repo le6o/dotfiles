@@ -21,6 +21,8 @@
 
 	logg = log --graph --date=relative --abbrev-commit --format=format:'%C(yellow)%h%Creset%Cgreen%d%Creset %s %Cblue(%cr)%Creset'
 
+	nuke = reset --hard HEAD
+
 	pick = cherry-pick
 
 	# Pushs up to a new branch matching the current branch name and sets upstream tracking
