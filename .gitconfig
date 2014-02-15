@@ -13,6 +13,7 @@
 	ci = commit
 	co = checkout
 	ls = ls-files
+	ri = rebase --interactive --autosquash
 	st = status -s
 
 	ap = add -p
