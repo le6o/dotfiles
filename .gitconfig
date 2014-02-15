@@ -23,6 +23,8 @@
 
 	diffw = diff --word-diff
 
+	fix = !sh -c 'git commit --fixup=$1' -
+
 	logg = log --graph --date=relative --abbrev-commit --format=format:'%C(yellow)%h%Creset%Cgreen%d%Creset %s %Cblue(%cr)%Creset'
 
 	nuke = reset --hard HEAD
