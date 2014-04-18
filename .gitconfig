@@ -43,3 +43,5 @@
 	enabled = True
 [push]
 	default = upstream
+[core]
+	excludesfile = ~/.gitignore
