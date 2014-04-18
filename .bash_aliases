@@ -23,7 +23,7 @@ alias composer.get='curl -s https://getcomposer.org/installer | php'
 alias composer='php composer.phar'
 
 # PHPUnit
-alias phpunit='vendor/phpunit/phpunit/phpunit.php'
+alias phpunit='vendor/phpunit/phpunit/phpunit'
 
 # PHP-CS-Fixer
 alias phix='php-cs-fixer --level=all fix'
