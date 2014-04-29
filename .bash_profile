@@ -13,6 +13,18 @@ PROMPT_COMMAND+='history -a;'
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
+# Git Prompt
+source ~/.git-prompt.sh
+
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWSTASHSTATE=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWCOLORHINTS=1
+GIT_PS1_DESCRIBE_STYLE="branch"
+GIT_PS1_SHOWUPSTREAM="auto git"
+
+PROMPT_COMMAND='__git_ps1 "$USER@\h:\w" "\\\$ "'
+
 export EDITOR=vim
 
 # Load aliases
