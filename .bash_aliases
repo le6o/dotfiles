@@ -6,7 +6,7 @@ alias ...='cd ../..'
 alias git~='cd $(git rev-parse --show-toplevel)'
 
 # List almost all files
-alias ls='ls -A'
+alias ls='ls -A --color'
 
 # Long list files with readable filesizes
 alias lsl='ls -lh'

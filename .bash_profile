@@ -1,7 +1,3 @@
-# Setup colours
-export CLICOLOR=1
-export LSCOLORS=gxbxhxfxcxegedabagacad
-
 # History, Ignore duplicates and go big
 export HISTCONTROL=ignoredups
 export HISTSIZE=123456
