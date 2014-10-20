@@ -16,9 +16,9 @@
 	ri = rebase --interactive --autosquash
 	st = status -s
 
-	ap = add -p
-	cp = checkout -p
-	rp = reset HEAD -p
+	amp = add -p
+	cmp = checkout -p
+	rmp = reset HEAD -p
 
 	amend = commit --amend -C HEAD
 
