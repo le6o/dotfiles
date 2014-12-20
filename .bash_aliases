@@ -18,8 +18,5 @@ alias now='date +%s'
 alias git.prune='git branch --merged | grep -v \* | xargs git branch -D'
 alias git.PRUNE='git branch | grep -v \* | xargs git branch -D'
 
-# PHPUnit
-alias phpunit='vendor/phpunit/phpunit/phpunit'
-
 # PHP-CS-Fixer
 alias phix='php-cs-fixer --level=all fix'

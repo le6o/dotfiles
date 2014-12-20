@@ -41,3 +41,5 @@ export EDITOR=nano
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+export PATH=~/.composer/vendor/bin:$PATH
