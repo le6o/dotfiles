@@ -12,6 +12,7 @@
 	br = branch -v
 	ci = commit
 	co = checkout
+	nb = !sh -c 'git fetch && git co origin/master --no-track -b $1' -
 	ri = rebase --interactive --autosquash
 	st = status -s
 
