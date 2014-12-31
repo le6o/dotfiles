@@ -12,7 +12,6 @@
 	br = branch -v
 	ci = commit
 	co = checkout
-	ls = ls-files
 	ri = rebase --interactive --autosquash
 	st = status -s
 
@@ -22,16 +21,12 @@
 
 	amend = commit --amend -C HEAD
 
-	diffw = diff --word-diff
-
 	fix = !sh -c 'git commit --fixup=$1' -
 
 	lg  = log --oneline --decorate --graph
 	lgd = log --oneline --decorate --graph ...develop
 
 	nuke = reset --hard HEAD
-
-	pick = cherry-pick
 
 	# Pushs up to a new branch matching the current branch name and sets upstream tracking
 	# assumes a default remote of 'origin'
