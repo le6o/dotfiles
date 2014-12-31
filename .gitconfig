@@ -24,7 +24,7 @@
 	fix = !sh -c 'git commit --fixup=$1' -
 
 	lg  = log --oneline --decorate --graph
-	lgd = log --oneline --decorate --graph ...develop
+	lgm = log --oneline --decorate --graph ...master
 
 	nuke = reset --hard HEAD
 
