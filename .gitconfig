@@ -37,6 +37,8 @@
 
 [rerere]
 	enabled = True
+[pull]
+	rebase = true
 [push]
 	default = upstream
 [core]
