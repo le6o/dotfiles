@@ -34,8 +34,7 @@ GIT_PS1_SHOWUPSTREAM="auto git"
 
 PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
 
-# Make things easy
-export EDITOR=nano
+export EDITOR=vim
 
 # Load aliases
 if [ -f ~/.bash_aliases ]; then
