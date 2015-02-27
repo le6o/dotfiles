@@ -46,3 +46,5 @@
 	default = upstream
 [core]
 	excludesfile = ~/.gitignore
+[fetch]
+	prune = true
