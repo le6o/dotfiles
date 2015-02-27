@@ -16,6 +16,8 @@
 	ri = rebase --interactive --autosquash
 	st = status -s
 
+	rim = !git ri master
+
 	amp = add -p
 	cmp = checkout -p
 	rmp = reset HEAD -p
