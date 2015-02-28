@@ -9,7 +9,7 @@
 	log = True
 
 [alias]
-	br = branch -v
+	br = branch -vv
 	ci = commit
 	co = checkout
 	nb = !sh -c 'git fetch && git co origin/master --no-track -b $1' -
