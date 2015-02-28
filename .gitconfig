@@ -20,6 +20,8 @@
 	cmp = checkout -p
 	rmp = reset HEAD -p
 
+	rim = !git ri master
+
 	amend = commit --amend -C HEAD
 
 	fix = !sh -c 'git commit --fixup=$1' -
