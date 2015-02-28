@@ -34,6 +34,8 @@
 	# Thanks @cs278, https://github.com/cs278/dotfiles/blob/master/.gitconfig#L95
 	pushup = "!sh -c 'remote=$1; [ -z $remote ] && remote=origin; branch=$(git symbolic-ref -q HEAD) || exit 1; branch=${branch##refs/heads/}; git push --set-upstream $remote $branch' -"
 
+	remotes = remote -v
+
 	staged = diff --cached
 
 [rerere]
