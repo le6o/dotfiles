@@ -38,6 +38,8 @@
 
 [rerere]
 	enabled = True
+[fetch]
+	prune = true
 [pull]
 	rebase = true
 [push]
