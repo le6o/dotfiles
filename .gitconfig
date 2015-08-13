@@ -29,6 +29,9 @@
 	lg  = log --oneline --decorate --graph
 	lgm = log --oneline --decorate --graph ...master
 
+	# log all merge commits since last tag
+	lgt = !sh -c 'git log --oneline --merges master...$(git describe --abbrev=0 --tags)'
+
 	nuke = reset --hard HEAD
 
 	# Pushs up to a new branch matching the current branch name and sets upstream tracking
