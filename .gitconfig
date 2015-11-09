@@ -20,17 +20,17 @@
 	cmp = checkout -p
 	rmp = reset HEAD -p
 
-	rim = !git ri master
+	rim = !git ri origin/master
 
 	amend = commit --amend -C HEAD
 
 	fix = !sh -c 'git commit --fixup=$1' -
 
 	lg  = log --oneline --decorate --graph
-	lgm = log --oneline --decorate --graph ...master
+	lgm = log --oneline --decorate --graph ...origin/master
 
 	# log all merge commits since last tag
-	lgt = !sh -c 'git log --oneline --merges master...$(git describe --abbrev=0 --tags)'
+	lgt = !sh -c 'git log --oneline --merges origin/master...$(git describe --abbrev=0 --tags)'
 
 	nuke = reset --hard HEAD
 
