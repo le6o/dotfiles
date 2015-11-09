@@ -24,6 +24,8 @@
 
 	amend = commit --amend -C HEAD
 
+	continue = rebase --continue
+
 	fix = !sh -c 'git commit --fixup=$1' -
 
 	lg  = log --oneline --decorate --graph
