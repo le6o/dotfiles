@@ -17,6 +17,3 @@ alias now='date +%s'
 # Remove git branches
 alias git.prune='git fetch && git branch --merged origin/master | grep -v \* | xargs git branch -D'
 alias git.PRUNE='git branch | grep -v \* | xargs git branch -D'
-
-# PHP-CS-Fixer
-alias phix='php-cs-fixer --level=all fix'
