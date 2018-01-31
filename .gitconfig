@@ -30,6 +30,9 @@
 
 	fix = !sh -c 'git commit --fixup=$1' -
 
+	hide = "stash save --include-untracked"
+	unhide = "stash apply"
+
 	lga = log --oneline --decorate --graph
 	lgm = "!git lga ...origin/master"
 
