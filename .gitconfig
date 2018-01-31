@@ -28,8 +28,10 @@
 
 	fix = !sh -c 'git commit --fixup=$1' -
 
-	lg  = log --oneline --decorate --graph
-	lgm = log --oneline --decorate --graph ...origin/master
+	lga = log --oneline --decorate --graph
+	lgm = "!git lga ...origin/master"
+
+	lg = "!git lga `git branch-point`.."
 
 	# log all merge commits since last tag
 	lgt = !sh -c 'git log --oneline --merges origin/master...$(git describe --abbrev=0 --tags)'
