@@ -13,7 +13,7 @@
 	ci = commit
 	co = checkout
 	nb = !sh -c 'git fetch && git co origin/master --no-track -b $1' -
-	ri = rebase --interactive --autosquash
+	ri = rebase --interactive --autosquash --preserve-merges
 	st = status -s
 
 	amp = add -p
