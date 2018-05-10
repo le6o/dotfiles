@@ -19,6 +19,7 @@
 	rp = reset HEAD -p
 	st = status -s
 
+	wip = commit -m WIP --no-verify
 
 	shear = "!git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done"
 
