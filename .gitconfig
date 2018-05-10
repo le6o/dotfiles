@@ -9,16 +9,15 @@
 	log = True
 
 [alias]
+	ap = add -p
 	br = branch -vv
 	ci = commit
 	co = checkout
+	cp = checkout -p
 	nb = !sh -c 'git fetch && git co origin/master --no-track -b $1' -
 	ri = rebase --interactive --autosquash --preserve-merges
+	rp = reset HEAD -p
 	st = status -s
-
-	amp = add -p
-	cmp = checkout -p
-	rmp = reset HEAD -p
 
 	rim = !git ri origin/master
 
